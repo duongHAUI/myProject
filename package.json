@@ -1,0 +1,27 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect src/app.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duongHAUI/myProject.git"
+  },
+  "author": "NguyenVanDuong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duongHAUI/myProject/issues"
+  },
+  "homepage": "https://github.com/duongHAUI/myProject#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "mongoose": "^6.0.5",
+    "mongoose-slug-generator": "^1.0.4",
+    "nodemon": "^2.0.12"
+  }
+}
