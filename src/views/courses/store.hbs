@@ -1,1 +1,22 @@
-<h1>Danh sách khóa học</h1>
+<table class="table container">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name Course</th>
+      <th scope="col">Description</th>
+      <th scope="col">Update</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  {{#each courses}}
+    <tbody>
+        <tr>
+        <th scope="row">{{sum @index 1}}</th>
+        <td>{{this.name}}</td>
+        <td>{{this.description}}</td>
+        <td><a href="/courses/{{this._id}}/edit">Update</a></td>
+        <td><a href="/courses/store">Delete</a></td>
+        </tr>
+    </tbody>
+  {{/each}}
+</table>

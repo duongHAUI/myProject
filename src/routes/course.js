@@ -4,7 +4,7 @@ const router = express.Router();
 const coursesController = require('../app/controllers/CourseController');
 
 
-
+router.get('/:_id/edit',coursesController.updateCourse);
 router.get('/create',coursesController.create);
 router.post('/store',coursesController.storePost);
 router.get('/store',coursesController.storeGet);

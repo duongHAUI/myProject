@@ -1,0 +1,18 @@
+<div class="container mt-4 " >
+    <h1>Update  Course</h1>
+    <form method="POST" action="/courses/store">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name course</label>
+            <input type="text" value="{{course.name}}" name="name" class="form-control" id="name" >
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description course</label>
+            <input type="text" value="{{course.description}}" name="description" class="form-control" id="description" >
+        </div>
+        <div class="mb-3">
+            <label for="urlImg" class="form-label">urlImg</label>
+            <input type="text" value="{{course.urlImg}}" name="urlImg" class="form-control" id="urlImg" >
+        </div>
+        <button type="submit" class="btn btn-primary">Update Course</button>
+    </form>
+</div>
